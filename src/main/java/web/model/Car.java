@@ -4,7 +4,10 @@ public class Car {
     private String model;
     private int series;
 
-    public Car(String model, int series) {
+    private final int id;
+
+    public Car(int id, String model, int series) {
+        this.id = id;
         this.model = model;
         this.series = series;
     }
@@ -23,5 +26,9 @@ public class Car {
 
     public void setSeries(int series) {
         this.series = series;
+    }
+
+    public int getId() {
+        return id;
     }
 }
