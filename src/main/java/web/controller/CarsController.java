@@ -14,7 +14,7 @@ import java.util.List;
 
 @Controller
 public class CarsController {
-    private final CarServiceImp carService;
+    private final CarService carService;
     public CarsController(CarServiceImp carService) {
         this.carService = carService;
     }
